@@ -1,0 +1,60 @@
+---
+title: "Web Scraping in R"
+author: "Clay Ford"
+date: "Wednesday, October 7, 2014"
+output: beamer_presentation
+---
+
+## Web Scraping
+
+Take data formatted for display in a web browser and reformat for analysis. 
+
+It helps to know...
+
+- a little about HTML and XML
+- how to manipulate strings in R
+- a little something about regular expressions
+- how to write a function and do some basic conditional looping
+
+Web scraping is mostly cleaning data.
+
+
+## Strategy
+
+Every web page is different, but a basic procedure in R (_for a single web page_) is as follows:
+
+1. View the source code; get familiar with the tags surrounding the data you want
+2. Read web page source code into R using `readLines` or functions from the `XML` package (or something else?)
+3. clean the data in R 
+
+Steps 1 and 2 are usually easy. Step 3 takes time.
+
+What about multiple web pages? Loop through steps 2 and 3.
+
+
+## Isn't there a package for this sort of thing?
+
+It looks like there will be.
+
+**rvest**
+
+_rvest helps you scrape information from web pages. It is designed to work with magrittr to make it easy to express common web scraping tasks_
+
+Not yet on CRAN. But available on GitHub:  
+https://github.com/hadley/rvest
+
+
+## Example 1 - single web page
+
+Web scraping the IMDB Top 250 movies
+
+![imdb top 250](imdb.jpg)
+
+## Example 2 - multiple web pages
+
+Web scraping Craigslist results
+
+![craigslist](craigslist.jpg)
+
+
+
