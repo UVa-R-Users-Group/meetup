@@ -1,0 +1,3 @@
+This demonstration of the **caret** package was given by Mark Lawson, bioinformatician at Hemoshear LLC, Charlottesville VA. The caret package (short for Classification And REgression Training) is a set of functions that streamline the process for creating predictive models. The package contains tools for data splitting, pre-processing, feature selection, model tuning using resampling, and variable importance estimation. Read more about the caret package [here](http://topepo.github.io/caret/index.html).
+
+This demonstration uses the caret package to split data into training and testing sets, and run repeated cross-validation to train random forest and penalized logistic regression models for classifying Fisher's iris data.
