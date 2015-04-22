@@ -3,4 +3,3 @@ This script, presented at the April 2015 Meetup, demonstrates how to carry out b
 The script assumes no prior knowledge of SNA but does assume a basic working knowledge of R. Most code is commented with an explanation of its purpose. 
 
 After this demonstration, hopefully Meetup participants will have an understanding of how to begin and carry out a basic social network analysis in R.
-
