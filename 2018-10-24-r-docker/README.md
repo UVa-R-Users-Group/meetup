@@ -6,5 +6,5 @@ Speaker(s): VP Nagraj and Neal Magee
 
 Both slide decks are available from the meetup in this repository:
 
-- ["Docker and R", VP Nagraj]("rdocker.pdf")
-- ["Docker + R", Neal Magee]("magee_containers_rug.pdf")
+- ["Docker and R", VP Nagraj](rdocker.pdf)
+- ["Docker + R", Neal Magee](magee_containers_rug.pdf)
