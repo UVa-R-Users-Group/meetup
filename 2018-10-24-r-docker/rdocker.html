@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Docker and R</title>
+    <meta charset="utf-8">
+    <meta name="author" content="VP Nagraj UVa School of Medicine Research Computing" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Docker and R
+### VP Nagraj<br>UVa School of Medicine Research Computing
+
+---
+
+
+
+## Why Docker?
+
+&lt;blockquote class="twitter-tweet" data-lang="en" width = "300" min-width="300" style="padding-left:240px;"&gt; &lt;a href="https://twitter.com/JennyBryan/status/913785731998289920"&gt;&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;https://twitter.com/JennyBryan/status/913785731998289920&gt;
+
+---
+
+## Why Docker?
+
+&lt;https://github.com/jennybc/docker-why&gt;
+
+Quick notes about why an R user would use [Docker](https://www.docker.com), jotted down as I read and thought about responses to [this tweet](https://twitter.com/JennyBryan/status/913785731998289920):
+
+&gt; Has anyone in the #rstats world written really well about the *why* of their use of Docker, as opposed to the *how*?
+
+*This does NOT yet go exhaustively though all the replies, make proper links, etc. Mea culpa.*
+
+* **Educator**
+* **Research/Analysis team**
+* **R Package Developer**
+* **Researcher who values computational reproducibility**
+* **User of the cloud**
+* **Nomad**
+* **Other**
+
+---
+
+## Why Docker?
+
+### Educator
+
+#### *Statistics course teaching setup (Mine Rundel and Colin Rundel)*
+
+&lt;https://peerj.com/preprints/3181.pdf&gt;
+
+#### *Exercises for *Introduction to eQTL Analysis* (Peter Humburg)*
+
+&lt;http://jknightlab.github.io/eqtl-intro/exercises/exercises_and_solutions.html&gt;
+
+#### *R training environment (Steph Locke)*
+
+&lt;https://itsalocke.com/blog/building-an-r-training-environment/&gt;
+    
+---
+
+## Why Docker?
+
+### Research/Analysis team
+
+#### *General motivation of Docker as reproducibility tool (Carl Boettiger)*
+
+&lt;https://arxiv.org/pdf/1410.0846.pdf&gt;
+
+#### *EcoHealth Alliance data science container (Noam Ross)*
+
+&lt;https://github.com/ecohealthalliance/reservoir&gt;
+
+#### *Handling computational expense of `rstanarm` (Andrew Heiss)*
+
+&lt;https://www.andrewheiss.com/blog/2017/04/27/super-basic-practical-guide-to-docker-and-rstudio/&gt;
+
+---
+  
+## Why Docker?
+
+### R Package Developer
+
+#### *Testing R packages with Docker (Jim Hester)*
+
+&lt;https://www.jimhester.com/2017/10/13/docker/&gt;
+
+#### *Personalized Docker image for package development (Yihui Xie)*
+
+&lt;https://github.com/yihui/r-docker&gt;
+
+#### *Docker for continous integration (Ildi Czeller)*
+
+&lt;https://ildiczeller.com/2017/09/17/r-pkg-check-with-docker-on-codeship/&gt;
+
+---
+
+## Tutorials
+
+#### *How to get started with data science in containers*
+
+&lt;http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/&gt;
+
+#### *Enough Docker to be Dangerous*
+
+&lt;http://seankross.com/2017/09/17/Enough-Docker-to-be-Dangerous.html&gt;
+
+#### *R Docker tutorial form rOpenSci*
+
+&lt;https://ropenscilabs.github.io/r-docker-tutorial/&gt;
+
+---
+
+## Tools
+
+#### `rocker`
+
+&lt;https://www.rocker-project.org/&gt;
+
+#### `harbor`
+
+&lt;https://github.com/wch/harbor&gt;
+
+#### `stevedore`
+
+&lt;https://github.com/richfitz/stevedore&gt;
+
+---
+background-image: url('https://raw.githubusercontent.com/richfitz/stevedore/master/demo/hello.gif')
+
+---
+
+## Acknowledgments
+
+#### *docker-izing your work in R*
+
+&lt;https://maraaverick.rbind.io/2017/11/docker-izing-your-work-in-r/&gt;
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

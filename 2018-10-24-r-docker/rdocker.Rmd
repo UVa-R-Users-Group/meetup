@@ -1,0 +1,140 @@
+---
+title: "Docker and R"
+author: "VP Nagraj<br>UVa School of Medicine Research Computing"
+# date: '`r format(Sys.Date(), "%B %d %Y")`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: "style.css"
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      beforeInit: "https://platform.twitter.com/widgets.js" 
+---
+```{r setup, include=FALSE, message = FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = FALSE, eval = FALSE)
+```
+
+## Why Docker?
+
+<blockquote class="twitter-tweet" data-lang="en" width = "300" min-width="300" style="padding-left:240px;"> <a href="https://twitter.com/JennyBryan/status/913785731998289920"></a></blockquote>
+
+<https://twitter.com/JennyBryan/status/913785731998289920>
+
+---
+
+## Why Docker?
+
+<https://github.com/jennybc/docker-why>
+
+Quick notes about why an R user would use [Docker](https://www.docker.com), jotted down as I read and thought about responses to [this tweet](https://twitter.com/JennyBryan/status/913785731998289920):
+
+> Has anyone in the #rstats world written really well about the *why* of their use of Docker, as opposed to the *how*?
+
+*This does NOT yet go exhaustively though all the replies, make proper links, etc. Mea culpa.*
+
+* **Educator**
+* **Research/Analysis team**
+* **R Package Developer**
+* **Researcher who values computational reproducibility**
+* **User of the cloud**
+* **Nomad**
+* **Other**
+
+---
+
+## Why Docker?
+
+### Educator
+
+#### *Statistics course teaching setup (Mine Rundel and Colin Rundel)*
+
+<https://peerj.com/preprints/3181.pdf>
+
+#### *Exercises for *Introduction to eQTL Analysis* (Peter Humburg)*
+
+<http://jknightlab.github.io/eqtl-intro/exercises/exercises_and_solutions.html>
+
+#### *R training environment (Steph Locke)*
+
+<https://itsalocke.com/blog/building-an-r-training-environment/>
+    
+---
+
+## Why Docker?
+
+### Research/Analysis team
+
+#### *General motivation of Docker as reproducibility tool (Carl Boettiger)*
+
+<https://arxiv.org/pdf/1410.0846.pdf>
+
+#### *EcoHealth Alliance data science container (Noam Ross)*
+
+<https://github.com/ecohealthalliance/reservoir>
+
+#### *Handling computational expense of `rstanarm` (Andrew Heiss)*
+
+<https://www.andrewheiss.com/blog/2017/04/27/super-basic-practical-guide-to-docker-and-rstudio/>
+
+---
+  
+## Why Docker?
+
+### R Package Developer
+
+#### *Testing R packages with Docker (Jim Hester)*
+
+<https://www.jimhester.com/2017/10/13/docker/>
+
+#### *Personalized Docker image for package development (Yihui Xie)*
+
+<https://github.com/yihui/r-docker>
+
+#### *Docker for continous integration (Ildi Czeller)*
+
+<https://ildiczeller.com/2017/09/17/r-pkg-check-with-docker-on-codeship/>
+
+---
+
+## Tutorials
+
+#### *How to get started with data science in containers*
+
+<http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/>
+
+#### *Enough Docker to be Dangerous*
+
+<http://seankross.com/2017/09/17/Enough-Docker-to-be-Dangerous.html>
+
+#### *R Docker tutorial form rOpenSci*
+
+<https://ropenscilabs.github.io/r-docker-tutorial/>
+
+---
+
+## Tools
+
+#### `rocker`
+
+<https://www.rocker-project.org/>
+
+#### `harbor`
+
+<https://github.com/wch/harbor>
+
+#### `stevedore`
+
+<https://github.com/richfitz/stevedore>
+
+---
+background-image: url('https://raw.githubusercontent.com/richfitz/stevedore/master/demo/hello.gif')
+
+---
+
+## Acknowledgments
+
+#### *docker-izing your work in R*
+
+<https://maraaverick.rbind.io/2017/11/docker-izing-your-work-in-r/>
+
